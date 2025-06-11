@@ -18,7 +18,7 @@ app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'your-secret-key-here')
 # Discord OAuth2 settings
 DISCORD_CLIENT_ID = os.environ.get('DISCORD_CLIENT_ID')
 DISCORD_CLIENT_SECRET = os.environ.get('DISCORD_CLIENT_SECRET')
-DISCORD_REDIRECT_URI = os.environ.get('DISCORD_REDIRECT_URI', 'https://fas-9mly.onrender.com/callback')
+DISCORD_REDIRECT_URI = os.environ.get('DISCORD_REDIRECT_URI', 'https://fsda-w5cr.onrender.com/callback')
 DISCORD_BOT_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
 GUILD_ID = int(os.environ.get('GUILD_ID', '1378687067260846290')) if os.environ.get('GUILD_ID', '1378687067260846290').isdigit() else 1378687067260846290
 ROLE_ID = int(os.environ.get('ROLE_ID', '1378687067260846292')) if os.environ.get('ROLE_ID', '1378687067260846292').isdigit() else 1378687067260846292
@@ -882,7 +882,7 @@ class AuthView(discord.ui.View):
         self.role_name = role_name
 
         # 認証URLを生成  
-        auth_url = "https://discord.com/oauth2/authorize?client_id=1379345672440119376&response_type=code&redirect_uri=https%3A%2F%2Ffas-9mly.onrender.com%2Fcallback&scope=email+identify"
+        auth_url = "https://discord.com/oauth2/authorize?client_id=1379345672440119376&response_type=code&redirect_uri=https%3A%2F%2Ffsda-w5cr.onrender.com%2Fcallback&scope=email+identify"
 
         # URLボタンを追加
         self.add_item(discord.ui.Button(
@@ -902,7 +902,7 @@ class RoleAssignView(discord.ui.View):
         self.role_id = role_id
 
         # OAuth2認証サイトのURLを生成
-        auth_url = "https://discord.com/oauth2/authorize?client_id=1379345672440119376&response_type=code&redirect_uri=https%3A%2F%2Ffas-9mly.onrender.com%2Fcallback&scope=email+identify"
+        auth_url = "https://discord.com/oauth2/authorize?client_id=1379345672440119376&response_type=code&redirect_uri=https%3A%2F%2Ffsda-w5cr.onrender.com%2Fcallback&scope=email+identify"
 
         # URLボタンを追加
         self.add_item(discord.ui.Button(
@@ -964,7 +964,7 @@ if __name__ == '__main__':
     print(f"- DISCORD_REDIRECT_URI長さ: {len(DISCORD_REDIRECT_URI) if DISCORD_REDIRECT_URI else 0}")
 
     # URLが正しく設定されているかチェック
-    expected_url = "https://fas-9mly.onrender.com/callback"
+    expected_url = "https://fsda-w5cr.onrender.com/callback"
 
     if not DISCORD_REDIRECT_URI:
         print("❌ エラー: DISCORD_REDIRECT_URIが設定されていません！")

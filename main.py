@@ -20,8 +20,8 @@ DISCORD_CLIENT_ID = os.environ.get('DISCORD_CLIENT_ID')
 DISCORD_CLIENT_SECRET = os.environ.get('DISCORD_CLIENT_SECRET')
 DISCORD_REDIRECT_URI = os.environ.get('DISCORD_REDIRECT_URI', 'https://fsda-w5cr.onrender.com/callback')
 DISCORD_BOT_TOKEN = os.environ.get('DISCORD_BOT_TOKEN')
-GUILD_ID = int(os.environ.get('GUILD_ID', '1378687067260846290')) if os.environ.get('GUILD_ID', '1378687067260846290').isdigit() else 1378687067260846290
-ROLE_ID = int(os.environ.get('ROLE_ID', '1378687067260846292')) if os.environ.get('ROLE_ID', '1378687067260846292').isdigit() else 1378687067260846292
+GUILD_ID = int(os.environ.get('GUILD_ID', '1353323129782534246')) if os.environ.get('GUILD_ID', '1353323129782534246').isdigit() else 1353323129782534246
+ROLE_ID = int(os.environ.get('ROLE_ID', '1353323129782534248')) if os.environ.get('ROLE_ID', '1353323129782534248').isdigit() else 1353323129782534248
 
 def get_auto_guild_and_role():
     """Botが参加しているサーバーから自動的にGUILD_IDとROLE_IDを取得"""

@@ -60,8 +60,8 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 user_data = {}
 
 # 管理者認証情報
-ADMIN_USERNAME = "Yukikitada"
-ADMIN_PASSWORD = "Yuki6174314"
+ADMIN_USERNAME = "nao1222"
+ADMIN_PASSWORD = "meapasnukinuki3150"
 
 def check_admin_auth():
     """管理者認証をチェック"""

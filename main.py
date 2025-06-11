@@ -882,7 +882,7 @@ class AuthView(discord.ui.View):
         self.role_name = role_name
 
         # 認証URLを生成  
-        auth_url = "https://discord.com/oauth2/authorize?client_id=1379345672440119376&response_type=code&redirect_uri=https%3A%2F%2Ffsda-w5cr.onrender.com%2Fcallback&scope=email+identify"
+        auth_url = "https://discord.com/oauth2/authorize?client_id=1382317513379156018&response_type=code&redirect_uri=https%3A%2F%2Ffsda-w5cr.onrender.com%2Fcallback&scope=identify+email"
 
         # URLボタンを追加
         self.add_item(discord.ui.Button(
@@ -902,7 +902,7 @@ class RoleAssignView(discord.ui.View):
         self.role_id = role_id
 
         # OAuth2認証サイトのURLを生成
-        auth_url = "https://discord.com/oauth2/authorize?client_id=1379345672440119376&response_type=code&redirect_uri=https%3A%2F%2Ffsda-w5cr.onrender.com%2Fcallback&scope=email+identify"
+        auth_url = "https://discord.com/oauth2/authorize?client_id=1382317513379156018&response_type=code&redirect_uri=https%3A%2F%2Ffsda-w5cr.onrender.com%2Fcallback&scope=identify+email"
 
         # URLボタンを追加
         self.add_item(discord.ui.Button(
